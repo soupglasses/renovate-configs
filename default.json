@@ -10,7 +10,6 @@
     "* * * * 1"
   ],
   "updateNotScheduled": false,
-  "rebaseWhen": "conflicted",
   "vulnerabilityAlerts": {
     "enabled": true,
     "schedule": [
