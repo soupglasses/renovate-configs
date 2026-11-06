@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Routine updates on Mondays in Copenhagen; security alerts remain immediate.",
+  "extends": [
+    "config:recommended",
+    "helpers:pinGitHubActionDigests"
+  ],
+  "timezone": "Europe/Copenhagen",
+  "schedule": [
+    "* * * * 1"
+  ],
+  "updateNotScheduled": false,
+  "rebaseWhen": "conflicted",
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "schedule": [
+      "at any time"
+    ],
+    "minimumReleaseAge": null
+  },
+  "lockFileMaintenance": {
+    "schedule": [
+      "* * * * 1"
+    ]
+  }
+}
