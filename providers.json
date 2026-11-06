@@ -19,6 +19,17 @@
         "github-actions"
       ],
       "groupName": "GitHub Actions"
+    },
+    {
+      "description": "Validate related image patches and digest refreshes in one native-provider build",
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "digest"
+      ],
+      "groupName": "Container images"
     }
   ],
   "customManagers": [
