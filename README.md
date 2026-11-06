@@ -36,8 +36,12 @@ reviewed repository schedule override.
 Validate changes with the same Renovate version used by the bot:
 
 ```sh
-renovate-config-validator --strict default.json providers.json
+renovate-config-validator --strict --no-global default.json providers.json
 ```
+
+GitHub Actions validates changes with a pinned Renovate image. This repository
+also consumes its signed default preset, so its own dependency PRs follow the
+same weekly policy.
 
 Validate both presets before publishing a new signed version tag. Never move a
 published tag; repositories adopt a new tag or commit through a reviewed update.

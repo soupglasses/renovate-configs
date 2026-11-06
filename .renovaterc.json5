@@ -1,0 +1,8 @@
+// SPDX-FileCopyrightText: 2026 Sofie Finnes <sofie+git@finnes.dev>
+// SPDX-License-Identifier: 0BSD
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>soupglasses/renovate-configs#v0.1.0"
+  ]
+}
