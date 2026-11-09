@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     container:
-      image: renovate/renovate:44.220.0@sha256:71599a2007228ada2cc6acb5ed836cf2c088537ffe76dafee1ee6a1c5c45d5e5
+      image: renovate/renovate:44.223.1@sha256:4d82316637556d793f1c0e248e003a3842ebadecea0a9f4e9b77c12421da2122
       options: --user 0
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
