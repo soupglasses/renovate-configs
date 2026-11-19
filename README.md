@@ -16,6 +16,8 @@ can be pinned to a reviewed commit or release; presets do not reference each oth
 The default policy applies to all repositories. The providers preset is optional
 and adds native Crossplane provider managers and grouping. Container image patches
 and digest refreshes share a PR, reducing repeated builds for both architectures.
+Pin a test fixture image as `image:tag@sha256:digest` in `tests/<name>-image.txt` to
+have the preset update it.
 Major image upgrades stay separate. Pin both references
 independently. Keep application-specific rules, exceptions, rebase policy, and automerge decisions
 in the consuming repository. No preset enables automerge.

@@ -46,6 +46,16 @@
     {
       "customType": "regex",
       "managerFilePatterns": [
+        "/^tests/[^/]+-image\\.txt$/"
+      ],
+      "matchStrings": [
+        "(?<depName>[^:\\s]+):(?<currentValue>[^@\\s]+)@(?<currentDigest>sha256:[a-f0-9]+)"
+      ],
+      "datasourceTemplate": "docker"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
         "/^kind-test\\.sh$/"
       ],
       "matchStrings": [
