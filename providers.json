@@ -66,6 +66,14 @@
       "registryUrlTemplate": "https://charts.crossplane.io/stable"
     }
   ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/__fixtures__/**"
+  ],
   "crossplane": {
     "managerFilePatterns": [
       "/^(examples/.*|tests/provider)\\.yaml$/"
